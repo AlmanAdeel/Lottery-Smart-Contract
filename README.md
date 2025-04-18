@@ -1,3 +1,11 @@
+> ⚠️ This contract is a **work-in-progress** and may contain bugs. I’ve shared it publicly for transparency, learning, and collaboration purposes.
+
+> My current focus is on refactoring and strengthening the security and logic flow.
+
+> If you're a dev interested in helping audit or debug, feel free to clone/fork it.
+
+
+
 ## Foundry
 
 **Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**

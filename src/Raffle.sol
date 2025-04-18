@@ -40,14 +40,14 @@ contract Raffle is VRFConsumerBaseV2Plus {
     event RequestedRaffleWinner(uint256 indexed requestid);
 
     constructor(
-        uint256 enterancefee,
+        uint256 entranceFee,
         uint256 interval,
         address vrfCoordinator,
         bytes32 gaslane,
         uint256 subscriptionId,
         uint32 callbackgaslimit
     ) VRFConsumerBaseV2Plus(vrfCoordinator) {
-        i_enterncefee = enterancefee;
+        i_enterncefee = entranceFee;
         i_interval = interval;
         s_lastTimeStamp = block.timestamp;
         i_keyhash = gaslane;
@@ -137,7 +137,7 @@ contract Raffle is VRFConsumerBaseV2Plus {
     /**
      * Getter functions below
      */
-    function getEnternceFee() external view returns (uint256) {
+    function getEntranceFee() external view returns (uint256) {
         return i_enterncefee;
     }
 

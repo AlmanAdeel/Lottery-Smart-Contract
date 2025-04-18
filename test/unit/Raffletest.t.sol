@@ -28,7 +28,7 @@ contract RaffleTest is Test,CodeConstants{
         Deploy deployer = new Deploy();
         (raffle,HelperConfig)=deployer.deployContract();
         helperConfig.NetworkConfig memory config = HelperConfig.getConfig();
-        enterancefee = config.enterancefee;
+        enterancefee = config.entranceFee;
         interval = config.interval;
         vrfCoordinator = config.vrfCoordinator;
         gaslane = config.gaslane;
